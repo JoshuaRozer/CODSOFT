@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+     <div class="container"></div>
+     <nav>
+        <img src="images/logo1.png" class="logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+     </nav>
+     <div class="header-text">
+        <h1>Hi, I'm <span> Joshua </span><br> Rozer from chennai</h1>
+     </div>
+    </div>
+</div>
+<!----------------------about----------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/colorreplacedmodel.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hey there! I'm Joshua Rozer Dasan, a versatile creator weaving digital wonders.
+                  As a web developer, I sculpt sleek and intuitive online experiences,
+                  embracing the challenge of transforming ideas into code. Animation is my heartbeat,
+                  a realm where characters come alive, and motion becomes magic. Fueled by a deep love for anime,
+                  I draw inspiration from Studio Ghibli to shonen epics, infusing my work with a touch of the fantastical.
+                  Join me in crafting digital dreams, where the boundaries of creativity are endlessly explored.
+                  Domo Arigato for visiting my corner of the web! 🌌✨</p>
+
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>designing websites </li>
+                        <li><span>video editing</span><br> editing videos for commercial use</li>
+                        <li><span>Animation</span><br> Building Animation/Creating 3D models</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>im a fresher</span><br>im  at the launching pad of my incredible career</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 - 2026</span><br>BE.Computer science engineering in anna univ</li>
+                        <li><span>2020 - 2022</span><br> 12TH STANDARD IN MONTFORT </li>
+                        <li><span>2015 - 2020</span><br> 5TH STANDARD TO 10 TH STANDARD IN MONTFORT </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------services------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Web design</h2>
+                <p>i will do custom web designing for you and your buissiness</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>video editing</h2>
+                <p>i will do custom web designing for you and your buissiness</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>Animation</h2>
+                <p>i will do custom web designing for you and your buissiness</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){     
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){     
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+</body>
+</html>
