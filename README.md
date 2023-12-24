@@ -32,7 +32,7 @@ Feel free to contribute to the development and improvement of this portfolio. If
 ## Author
 
 - **Joshua Rozer Dasan** 
-  - [GitHub Profile](https://github.com/your-username)
+  - [GitHub Profile](https://github.com/JoshuaRozer)
   - [LinkedIn Profile](https://www.linkedin.com/in/joshuarozer/)
  
   
