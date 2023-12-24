@@ -17,9 +17,7 @@ Welcome to the repository for my Personal Portfolio, a project developed during 
 ## Usage Instructions
 
 1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/your-username/portfolio.git
-   ```
+   
 2. **Open in Browser:**
    Open the `index.html` file in a web browser to view your personal portfolio.
 3. **Customize Content:**
